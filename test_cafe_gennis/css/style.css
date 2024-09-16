@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1ed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*config menu*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+}
+
+.navegacion {
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.menu1  {
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+
+h1 {
+    color: aliceblue;
+    font-weight: 100;
+}
+
+h1 span {
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu1 p {
+    margin: 10px 0;
+}
+
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*config hero*/
+
+.hero {
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.hero h2 {
+    font-size: x-large;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/*Nosotros*/
+
+.nosotros {
+    margin-top: 2rem;
+    padding: 3rem;
+    width: 100%;
+}
+
+.entrada_blog h3 {
+    margin: 2rem 0;
+    width: 100%;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.entrada_blog {
+    width: 90%;
+}
+
+.entrada_blog h4 {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.entrada_blog p {
+    margin-bottom: 20px;
+}
+
+.btn-entrada {
+    background-color: black;
+    border-radius: 0;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+}
+
+.btn-entrada:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+/*cursos*/
+
+.cursos {
+    margin-top: 4rem;
+}
+
+.cursos h2 {
+    margin-bottom: 2rem;
+}
+
+.cursos h3 {
+    margin: 1rem 0;
+}
+
+.cursos p span {
+    font-weight: bold;
+}
+
+.cursos p {
+    margin: .9rem 0;
+}
+
+.btn-curso {
+    background-color: #633f3f;
+    border-radius: 0;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+}
+
+.btn-curso:hover {
+    background-color: #483939;
+    cursor: pointer;
+}
+
+.divisor-C {
+    margin: 2rem 0;
+    border: solid #00000036 1px;
+    width: 80%;
+}
+
+/*entradas a blogs*/
+
+.masEntradas {
+    width: 75%;
+    padding-left: 3rem;
+}
+
+.entrada {
+    margin: 1.5rem .5rem;
+}
+
+.entrada h4 {
+    margin: .8rem 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.entrada p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-f {
+    font-size: 1.3rem;
+    color: aliceblue;
+    margin-right: 20%;
+}
+
+.logo-f span {
+    font-weight: 900;
+}
+
+/*responsive*/
+
+@media (min-width: 600px) {
+
+    header {
+        position: fixed;
+    }
+
+    .nosotros {
+        display: flex;
+    }
+
+    .cursos {
+        margin-left: 2rem;
+    }
+
+    .navegacion {
+        display: flex;
+    }
+    
+    .menu1 {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .menu p {
+        margin: 0 5px;
+    }
+}
